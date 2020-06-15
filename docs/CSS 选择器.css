@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+#section_1 .section-class {
+    background-color: yellow;
+}
+
+#section_2 #section-id {
+    background-color: yellow;
+}
+
+#section_3 * {
+    background-color: yellow;
+}
+
+#section_4 p {
+    background-color: yellow;
+}
+
+#section_5 div, #section_5 p {
+    background-color: yellow;
+}
+
+#section_6 div span {
+    background-color: yellow;
+}
+
+#section_7 div > span {
+    background-color: yellow;
+}
+
+#section_8 div + p {
+    background-color: yellow;
+}
+
+#section_9 div ~ p {
+    background-color: yellow;
+}
+
+#section_10 a[target] {
+    background-color: yellow;
+}
+
+#section_11 a[target="_blank"] {
+    background-color: yellow;
+}
+
+#section_12 a[title~="foo"] {
+    background-color: yellow;
+}
+
+#section_13 p[lang|="zh"] {
+    background-color: yellow;
+}
+
+#section_14 a[href^="https"] {
+    background-color: yellow;
+}
+
+#section_15 a[title$="e"] {
+    background-color: yellow;
+}
+
+#section_16 a[href*="github"] {
+    background-color: yellow;
+}
+
+#section_17 a:link {
+    background-color: yellow;
+}
+
+#section_18 a:visited {
+    color: red;
+}
+
+#section_19 a:hover {
+    color: red;
+}
+
+#section_20 a:active {
+    color: red;
+}
+
+#section_21 input:focus {
+    background-color: yellow;
+}
+
+#section_22 p:lang(zh) {
+    background-color: yellow;
+}
+
+#section_23 p:before {
+    content: "#";
+}
+
+#section_24 p:after {
+    content: "#";
+}

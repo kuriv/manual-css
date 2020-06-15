@@ -489,6 +489,17 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="css-&#x9009;&#x62E9;&#x5668;">CSS &#x9009;&#x62E9;&#x5668;</h1>
+<ul>
+<li><a href="#class">.class</a></li>
+<li><a href="#id">#id</a></li>
+<li><a href="#&#x901A;&#x914D;&#x7B26;">* &#x901A;&#x914D;&#x7B26;</a></li>
+<li><a href="#element">element</a></li>
+<li>[element, element]</li>
+<li>[element element]</li>
+<li>[element &gt; element]</li>
+</ul>
+<link rel="stylesheet" type="text/css" href="CSS &#x9009;&#x62E9;&#x5668;.css">
+
 <h2 id="class">.class</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
 <pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>section-class<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
@@ -498,15 +509,9 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p><style type="text/css">
-    .section-class {
-        background-color: yellow;
-    }
-</style></p>
-<section>
+<section id="section_1">
     <p class="section-class">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
 </section>
-
 
 <h2 id="id">#id</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
@@ -517,17 +522,11 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p><style type="text/css">
-    #section-id {
-        background-color: yellow;
-    }
-</style></p>
-<section>
+<section id="section_2">
     <p id="section-id">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
 </section>
 
-
-<h2 id="">*</h2>
+<h2 id="&#x901A;&#x914D;&#x7B26;">* &#x901A;&#x914D;&#x7B26;</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
 <pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
@@ -536,14 +535,10 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p><style type="text/css">
-    #section_ * {
-        background-color: yellow;
-    }
-</style></p>
-<section id="section_">
+<section id="section_3">
     <p>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
 </section>
+
 
 <h2 id="element">element</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
@@ -555,15 +550,11 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p><style type="text/css">
-    #section__ p {
-        background-color: yellow;
-    }
-</style></p>
-<section id="section__">
+<section id="section_4">
     <div>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</div>
     <p>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
 </section>
+
 
 <h2 id="element-element">element, element</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
@@ -575,15 +566,11 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p><style type="text/css">
-    #section___ div, #section___ p {
-        background-color: yellow;
-    }
-</style></p>
-<section id="section___">
+<section id="section_5">
     <div>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</div>
     <p>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
 </section>
+
 
 <h2 id="element-element">element element</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
@@ -598,18 +585,14 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p><style type="text/css">
-    #section____ div span {
-        background-color: yellow;
-    }
-</style></p>
-<section id="section____">
+<section id="section_6">
     <div>
         <p>
             <span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</span>
         </p>
     </div>
 </section>
+
 
 <h2 id="element--element">element &gt; element</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
@@ -620,17 +603,12 @@
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<pre class="language-"><code class="lang-css"><span class="token selector">div span</span> <span class="token punctuation">{</span>
+<pre class="language-"><code class="lang-css"><span class="token selector">div &gt; span</span> <span class="token punctuation">{</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p><style type="text/css">
-    #section_____ div > span {
-        background-color: yellow;
-    }
-</style></p>
-<section id="section_____">
+<section id="section_7">
     <div>
         <span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</span>
         <p>
@@ -638,6 +616,7 @@
         </p>
     </div>
 </section>
+
 
 <h2 id="element--element">element + element</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
@@ -650,16 +629,12 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p><style type="text/css">
-    #section______ div + p {
-        background-color: yellow;
-    }
-</style></p>
-<section id="section______">
+<section id="section_8">
     <div>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</div>
     <p>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
     <p>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
 </section>
+
 
 <h2 id="element--element">element ~ element</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
@@ -672,16 +647,12 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p><style type="text/css">
-    #section_______ div ~ p {
-        background-color: yellow;
-    }
-</style></p>
-<section id="section_______">
+<section id="section_9">
     <div>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</div>
     <p>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
     <p>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
 </section>
+
 
 <h2 id="attribute">[attribute]</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
@@ -692,14 +663,10 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p><style type="text/css">
-    #section________ a[target] {
-        background-color: yellow;
-    }
-</style></p>
-<section id="section________">
+<section id="section_10">
     <a href="https://github.com/" target="_blank">GitHub</a>
 </section>
+
 
 <h2 id="attributevalue">[attribute=value]</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
@@ -710,14 +677,227 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p><style type="text/css">
-    #section_________ a[target=_blank] {
-        background-color: yellow;
-    }
-</style></p>
-<section id="section_________">
+<section id="section_11">
     <a href="https://github.com/" target="_blank">GitHub</a>
 </section>
+
+
+<h2 id="attributevalue">[attribute~=value]</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://github.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>_blank<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>foo bar<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>GitHub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://www.google.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>_blank<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>foobar<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Google<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">a[title~=&quot;foo&quot;]</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<section id="section_12">
+    <a href="https://github.com/" target="_blank" title="foo bar">GitHub</a>
+    <a href="https://www.google.com/" target="_blank" title="foobar">Google</a>
+</section>
+
+
+<h2 id="attributevalue">[attribute|=value]</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en-us<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>zh<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>zh-cmn-hans<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">p[lang|=&quot;zh&quot;]</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<section id="section_13">
+    <p lang="en">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+    <p lang="en-us">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+    <p lang="zh">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+    <p lang="zh-cmn-hans">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+</section>
+
+
+<h2 id="attributevalue">[attribute^=value]</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://github.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>_blank<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>GitHub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://www.example.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>_blank<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">a[href^=&quot;https&quot;]</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<section id="section_14">
+    <a href="https://github.com/" target="_blank">GitHub</a>
+    <a href="http://www.example.com/" target="_blank">Example</a>
+</section>
+
+
+<h2 id="attributevalue">[attribute$=value]</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://github.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>_blank<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>GitHub<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>GitHub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://www.google.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>_blank<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Google<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Google<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">a[title$=&quot;e&quot;]</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<section id="section_15">
+    <a href="https://github.com/" target="_blank" title="GitHub">GitHub</a>
+    <a href="https://www.google.com/" target="_blank" title="Google">Google</a>
+</section>
+
+
+<h2 id="attributevalue">[attribute*=value]</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://github.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>_blank<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>GitHub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://www.google.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>_blank<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Google<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">a[href*=&quot;github&quot;]</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<section id="section_16">
+    <a href="https://github.com/" target="_blank">GitHub</a>
+    <a href="https://www.google.com/" target="_blank">Google</a>
+</section>
+
+
+<h2 id="link">:link</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://github.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>_blank<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>GitHub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">a:link</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<section id="section_17">
+    <a href="https://github.com/" target="_blank">GitHub</a>
+</section>
+
+
+<h2 id="visited">:visited</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://github.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>_blank<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>GitHub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">a:visited</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<section id="section_18">
+    <a href="https://github.com/" target="_blank">GitHub</a>
+</section>
+
+
+<h2 id="hover">:hover</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://github.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>_blank<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>GitHub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">a:hover</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<section id="section_19">
+    <a href="https://github.com/" target="_blank">GitHub</a>
+</section>
+
+
+<h2 id="active">:active</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://github.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>_blank<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>GitHub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">a:active</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<section id="section_20">
+    <a href="https://github.com/" target="_blank">GitHub</a>
+</section>
+
+
+<h2 id="focus">:focus</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>foo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bar<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">input:focus</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<section id="section_21">
+    <input type="text" name="foo">
+    <input type="text" name="bar">
+</section>
+
+
+<h2 id="langlanguage">:lang(language)</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en-us<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>zh<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>zh-cmn-hans<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">p:lang(zh)</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<section id="section_22">
+    <p lang="en">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+    <p lang="en-us">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+    <p lang="zh">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+    <p lang="zh-cmn-hans">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+</section>
+
+
+<h2 id="before">:before</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">p:before</span> <span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;#&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<section id="section_23">
+    <p>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+</section>
+
+
+<h2 id="after">:after</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">p:after</span> <span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;#&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<section id="section_24">
+    <p>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+</section>
+
+<h2 id="first-letter">:first-letter</h2>
+<h2 id="first-line">:first-line</h2>
+<h2 id="first-child">:first-child</h2>
+<h2 id="last-child">:last-child</h2>
+<h2 id="first-of-type">:first-of-type</h2>
+<h2 id="last-of-type">:last-of-type</h2>
+<h2 id="only-child">:only-child</h2>
+<h2 id="only-of-type">:only-of-type</h2>
+<h2 id="nth-child">:nth-child</h2>
+<h2 id="nth-last-child">:nth-last-child</h2>
+<h2 id="nth-of-type">:nth-of-type</h2>
+<h2 id="nth-last-of-type">:nth-last-of-type</h2>
+
                                 
                                 </section>
                             
@@ -752,7 +932,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CSS 选择器","level":"1.1.2","depth":2,"previous":{"title":"[用户界面]","level":"1.1.1.21","depth":3,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.png","appleTouchMore":{"120x120":"favicon-120x120.png","180x180":"favicon-180x180.png"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"CSS","language":"zh-hans","gitbook":">=3.0.0","description":"CSS 手册","direction":"ltr"},"file":{"path":"docs/CSS 选择器.md","mtime":"2020-06-15T06:38:24.877Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-15T03:33:27.820Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CSS 选择器","level":"1.1.2","depth":2,"previous":{"title":"[用户界面]","level":"1.1.1.21","depth":3,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.png","appleTouchMore":{"120x120":"favicon-120x120.png","180x180":"favicon-180x180.png"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"CSS","language":"zh-hans","gitbook":">=3.0.0","description":"CSS 手册","direction":"ltr"},"file":{"path":"docs/CSS 选择器.md","mtime":"2020-06-15T11:44:44.644Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-15T11:39:58.189Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
