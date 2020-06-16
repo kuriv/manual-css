@@ -1,16 +1,52 @@
 # CSS 选择器
 
-* [.class](#class)
-* [#id](#id)
-* [* 通配符](#通配符)
-* [element](#element)
-* [element, element]
-* [element element]
-* [element > element]
+* [.class - 指定 class 的元素](#class---指定-class-的元素)
+* [#id - 指定 id 的元素](#id---指定-id-的元素)
+* [* - 所有元素](#--所有元素)
+* [element - 指定的 element 元素](#element---指定的-element-元素)
+* [element, element - 指定的多个 element 元素](#element-element---指定的多个-element-元素)
+* [element element - 指定 element 元素中的 element 元素](#element-element---指定-element-元素中的-element-元素)
+* [element > element - 指定 element 父元素的 element 子元素](#element--element---指定-element-父元素的-element-子元素)
+* [element + element - 指定 element 元素后的 element 元素](#element--element---指定-element-元素后的-element-元素)
+* [element ~ element - 指定 element 元素后的所有 element 元素](#element--element---指定-element-元素后的所有-element-元素)
+* [[attribute] - 指定包含属性 attribute 的元素](#attribute---指定包含属性-attribute-的元素)
+* [[attribute=value] - 指定包含属性 attribute 且属性值为 value 的元素](#attributevalue---指定包含属性-attribute-且属性值为-value-的元素)
+* [[attribute~=value] - 指定包含属性 attribute 且属性值包含独立单词 value 的元素](#attributevalue---指定包含属性-attribute-且属性值包含独立单词-value-的元素)
+* [[attribute|=value] - 指定包含属性 attribute 且属性值包含独立单词开头为 value 的元素](#attributevalue---指定包含属性-attribute-且属性值包含独立单词开头为-value-的元素)
+* [[attribute^=value] - 指定包含属性 attribute 且属性值以 value 开头的元素](#attributevalue---指定包含属性-attribute-且属性值以-value-开头的元素)
+* [[attribute$=value] - 指定包含属性 attribute 且属性值以 value 结尾的元素](#attributevalue---指定包含属性-attribute-且属性值以-value-结尾的元素)
+* [[attribute*=value] - 指定包含属性 attribute 且属性值包含 value 字符串的元素](#attributevalue---指定包含属性-attribute-且属性值包含-value-字符串的元素)
+* [:link - 指定未被访问的链接](#link---指定未被访问的链接)
+* [:visited - 指定已被访问的链接](#visited---指定已被访问的链接)
+* [:hover - 指定鼠标指针悬停之上的链接](#hover---指定鼠标指针悬停之上的链接)
+* [:active - 指定活动链接](#active---指定活动链接)
+* [:focus - 指定获得焦点的输入元素](#focus---指定获得焦点的输入元素)
+* [:lang(language) - 指定包含属性 lang 且属性值包含独立单词开头为 language 的元素](#langlanguage---指定包含属性-lang-且属性值包含独立单词开头为-language-的元素)
+* [:before - 指定元素前](#before---指定元素前)
+* [:after - 指定元素后](#after---指定元素后)
+* [:first-letter - 指定元素的首字符](#first-letter---指定元素的首字符)
+* [:first-line - 指定元素的首行](#first-line---指定元素的首行)
+* [:first-child - 指定属于其父元素的首个子元素](#first-child---指定属于其父元素的首个子元素)
+* [:last-child - 指定属于其父元素的最后一个子元素](#last-child---指定属于其父元素的最后一个子元素)
+* [:first-of-type - 指定属于其父元素的首个指定元素](#first-of-type---指定属于其父元素的首个指定元素)
+* [:last-of-type - 指定属于其父元素的最后一个指定元素](#last-of-type---指定属于其父元素的最后一个指定元素)
+* [:only-child - 指定属于其父元素的唯一子元素](#only-child---指定属于其父元素的唯一子元素)
+* [:only-of-type - 指定属于其父元素的唯一指定元素](#only-of-type---指定属于其父元素的唯一指定元素)
+* [:nth-child(n) - 指定属于其父元素的第 n 个元素](#nth-childn---指定属于其父元素的第-n-个元素)
+* [:nth-last-child(n) - 指定属于其父元素的倒数第 n 个元素](#nth-last-childn---指定属于其父元素的倒数第-n-个元素)
+* [:nth-of-type(n) - 指定属于其父元素的第 n 个指定元素](#nth-of-typen---指定属于其父元素的第-n-个指定元素)
+* [:nth-last-of-type(n) - 指定属于其父元素的倒数第 n 个指定元素](#nth-last-of-typen---指定属于其父元素的倒数第-n-个指定元素)
+* [:root - 指定根元素](#root---指定根元素)
+* [:empty - 指定没有子元素的元素](#empty---指定没有子元素的元素)
+* [:target - 指定的锚点链接](#target---指定的锚点链接)
+* [:enabled - 指定启用的输入元素](#enabled---指定启用的输入元素)
+* [:disabled - 指定禁用的输入元素](#disabled---指定禁用的输入元素)
+* [:not(selector) - 指定非 selector 元素的元素](#notselector---指定非-selector-元素的元素)
+* [::selection - 被用户选中的区域](#selection---被用户选中的区域)
 
 <link rel="stylesheet" type="text/css" href="CSS 选择器.css">
 
-## .class
+## .class - 指定 class 的元素
 
 语法：
 
@@ -30,7 +66,7 @@
     <p class="section-class">这是一段普通的段落。</p>
 </section>
 
-## #id
+## #id - 指定 id 的元素
 
 语法：
 
@@ -50,7 +86,7 @@
     <p id="section-id">这是一段普通的段落。</p>
 </section>
 
-## * 通配符
+## * - 所有元素
 
 语法：
 
@@ -70,8 +106,7 @@
     <p>这是一段普通的段落。</p>
 </section>
 
-
-## element
+## element - 指定的 element 元素
 
 语法：
 
@@ -93,8 +128,7 @@ p {
     <p>这是一段普通的段落。</p>
 </section>
 
-
-## element, element
+## element, element - 指定的多个 element 元素
 
 语法：
 
@@ -116,8 +150,7 @@ div, p {
     <p>这是一段普通的段落。</p>
 </section>
 
-
-## element element
+## element element - 指定 element 元素中的 element 元素
 
 语法：
 
@@ -145,8 +178,7 @@ div span {
     </div>
 </section>
 
-
-## element > element
+## element > element - 指定 element 父元素的 element 子元素
 
 语法：
 
@@ -176,8 +208,7 @@ div > span {
     </div>
 </section>
 
-
-## element + element
+## element + element - 指定 element 元素后的 element 元素
 
 语法：
 
@@ -201,8 +232,7 @@ div + p {
     <p>这是一段普通的段落。</p>
 </section>
 
-
-## element ~ element
+## element ~ element - 指定 element 元素后的所有 element 元素
 
 语法：
 
@@ -226,8 +256,7 @@ div ~ p {
     <p>这是一段普通的段落。</p>
 </section>
 
-
-## [attribute]
+## [attribute] - 指定包含属性 attribute 的元素
 
 语法：
 
@@ -247,8 +276,7 @@ a[target] {
     <a href="https://github.com/" target="_blank">GitHub</a>
 </section>
 
-
-## [attribute=value]
+## [attribute=value] - 指定包含属性 attribute 且属性值为 value 的元素
 
 语法：
 
@@ -268,8 +296,7 @@ a[target="_blank"] {
     <a href="https://github.com/" target="_blank">GitHub</a>
 </section>
 
-
-## [attribute~=value]
+## [attribute~=value] - 指定包含属性 attribute 且属性值包含独立单词 value 的元素
 
 语法：
 
@@ -291,8 +318,7 @@ a[title~="foo"] {
     <a href="https://www.google.com/" target="_blank" title="foobar">Google</a>
 </section>
 
-
-## [attribute|=value]
+## [attribute|=value] - 指定包含属性 attribute 且属性值包含独立单词开头为 value 的元素
 
 语法：
 
@@ -318,8 +344,7 @@ p[lang|="zh"] {
     <p lang="zh-cmn-hans">这是一段普通的段落。</p>
 </section>
 
-
-## [attribute^=value]
+## [attribute^=value] - 指定包含属性 attribute 且属性值以 value 开头的元素
 
 语法：
 
@@ -341,8 +366,7 @@ a[href^="https"] {
     <a href="http://www.example.com/" target="_blank">Example</a>
 </section>
 
-
-## [attribute$=value]
+## [attribute$=value] - 指定包含属性 attribute 且属性值以 value 结尾的元素
 
 语法：
 
@@ -364,8 +388,7 @@ a[title$="e"] {
     <a href="https://www.google.com/" target="_blank" title="Google">Google</a>
 </section>
 
-
-## [attribute*=value]
+## [attribute*=value] - 指定包含属性 attribute 且属性值包含 value 字符串的元素
 
 语法：
 
@@ -387,8 +410,7 @@ a[href*="github"] {
     <a href="https://www.google.com/" target="_blank">Google</a>
 </section>
 
-
-## :link
+## :link - 指定未被访问的链接
 
 语法：
 
@@ -408,8 +430,7 @@ a:link {
     <a href="https://github.com/" target="_blank">GitHub</a>
 </section>
 
-
-## :visited
+## :visited - 指定已被访问的链接
 
 语法：
 
@@ -429,8 +450,7 @@ a:visited {
     <a href="https://github.com/" target="_blank">GitHub</a>
 </section>
 
-
-## :hover
+## :hover - 指定鼠标指针悬停之上的链接
 
 语法：
 
@@ -450,8 +470,7 @@ a:hover {
     <a href="https://github.com/" target="_blank">GitHub</a>
 </section>
 
-
-## :active
+## :active - 指定活动链接
 
 语法：
 
@@ -471,8 +490,7 @@ a:active {
     <a href="https://github.com/" target="_blank">GitHub</a>
 </section>
 
-
-## :focus
+## :focus - 指定获得焦点的输入元素
 
 语法：
 
@@ -494,8 +512,7 @@ input:focus {
     <input type="text" name="bar">
 </section>
 
-
-## :lang(language)
+## :lang(language) - 指定包含属性 lang 且属性值包含独立单词开头为 language 的元素
 
 语法：
 
@@ -521,8 +538,7 @@ p:lang(zh) {
     <p lang="zh-cmn-hans">这是一段普通的段落。</p>
 </section>
 
-
-## :before
+## :before - 指定元素前
 
 语法：
 
@@ -542,8 +558,7 @@ p:before {
     <p>这是一段普通的段落。</p>
 </section>
 
-
-## :after
+## :after - 指定元素后
 
 语法：
 
@@ -563,48 +578,466 @@ p:after {
     <p>这是一段普通的段落。</p>
 </section>
 
-## :first-letter
+## :first-letter - 指定元素的首字符
 
+语法：
 
+```html
+<p>这是一段普通的段落。</p>
+```
 
-## :first-line
+```css
+p:first-letter {
+    color: red;
+}
+```
 
+效果：
 
+<section id="section_25">
+    <p>这是一段普通的段落。</p>
+</section>
 
-## :first-child
+## :first-line - 指定元素的首行
 
+语法：
 
+```html
+<p>这是一段普通的段落。<br>这是一段普通的段落。</p>
+```
 
-## :last-child
+```css
+p:first-line {
+    color: red;
+}
+```
 
+效果：
 
+<section id="section_26">
+    <p>这是一段普通的段落。<br>这是一段普通的段落。</p>
+</section>
 
-## :first-of-type
+## :first-child - 指定属于其父元素的首个子元素
 
+语法：
 
+```html
+<section>
+    <p>这是一段普通的段落。</p>
+    <div>
+        <p>这是一段普通的段落。</p>
+    </div>
+    <p>这是一段普通的段落。</p>
+</section>
+```
 
-## :last-of-type
+```css
+p:first-child {
+    background-color: yellow;
+}
+```
 
+效果：
 
+<section id="section_27">
+    <section>
+        <p>这是一段普通的段落。</p>
+        <div>
+            <p>这是一段普通的段落。</p>
+        </div>
+        <p>这是一段普通的段落。</p>
+    </section>
+</section>
 
-## :only-child
+## :last-child - 指定属于其父元素的最后一个子元素
 
+语法：
 
+```html
+<section>
+    <p>这是一段普通的段落。</p>
+    <div>
+        <p>这是一段普通的段落。</p>
+    </div>
+    <p>这是一段普通的段落。</p>
+</section>
+```
 
-## :only-of-type
+```css
+p:last-child {
+    background-color: yellow;
+}
+```
 
+效果：
 
+<section id="section_28">
+    <section>
+        <p>这是一段普通的段落。</p>
+        <div>
+            <p>这是一段普通的段落。</p>
+        </div>
+        <p>这是一段普通的段落。</p>
+    </section>
+</section>
 
-## :nth-child
+## :first-of-type - 指定属于其父元素的首个指定元素
 
+语法：
 
+```html
+<div>这是一段普通的段落。</div>
+<p>这是一段普通的段落。</p>
+<p>这是一段普通的段落。</p>
+```
 
-## :nth-last-child
+```css
+p:first-of-type {
+    background-color: yellow;
+}
+```
 
+效果：
 
+<section id="section_29">
+    <div>这是一段普通的段落。</div>
+    <p>这是一段普通的段落。</p>
+    <p>这是一段普通的段落。</p>
+</section>
 
-## :nth-of-type
+## :last-of-type - 指定属于其父元素的最后一个指定元素
 
+语法：
 
+```html
+<div>这是一段普通的段落。</div>
+<p>这是一段普通的段落。</p>
+<div>这是一段普通的段落。</div>
+```
 
-## :nth-last-of-type
+```css
+p:last-of-type {
+    background-color: yellow;
+}
+```
+
+效果：
+
+<section id="section_30">
+    <div>这是一段普通的段落。</div>
+    <p>这是一段普通的段落。</p>
+    <div>这是一段普通的段落。</div>
+</section>
+
+## :only-child - 指定属于其父元素的唯一子元素
+
+语法：
+
+```html
+<div>
+    <p>这是一段普通的段落。</p>
+</div>
+<div>
+    <p>这是一段普通的段落。</p>
+    <div>这是一段普通的段落。</div>
+</div>
+```
+
+```css
+p:only-child {
+    background-color: yellow;
+}
+```
+
+效果：
+
+<section id="section_31">
+    <div>
+        <p>这是一段普通的段落。</p>
+    </div>
+    <div>
+        <p>这是一段普通的段落。</p>
+        <div>这是一段普通的段落。</div>
+    </div>
+</section>
+
+## :only-of-type - 指定属于其父元素的唯一指定元素
+
+语法：
+
+```html
+<div>
+    <p>这是一段普通的段落。</p>
+</div>
+<div>
+    <p>这是一段普通的段落。</p>
+    <div>这是一段普通的段落。</div>
+</div>
+```
+
+```css
+p:only-of-type {
+    background-color: yellow;
+}
+```
+
+效果：
+
+<section id="section_32">
+    <div>
+        <p>这是一段普通的段落。</p>
+    </div>
+    <div>
+        <p>这是一段普通的段落。</p>
+        <div>这是一段普通的段落。</div>
+    </div>
+</section>
+
+## :nth-child(n) - 指定属于其父元素的第 n 个元素
+
+语法：
+
+```html
+<div>这是一段普通的段落。</div>
+<p>这是一段普通的段落。</p>
+<p>这是一段普通的段落。</p>
+<p>这是一段普通的段落。</p>
+```
+
+```css
+p:nth-child(2) {
+    background-color: yellow;
+}
+```
+
+效果：
+
+<section id="section_33">
+    <div>这是一段普通的段落。</div>
+    <p>这是一段普通的段落。</p>
+    <p>这是一段普通的段落。</p>
+    <p>这是一段普通的段落。</p>
+</section>
+
+## :nth-last-child(n) - 指定属于其父元素的倒数第 n 个元素
+
+语法：
+
+```html
+<div>这是一段普通的段落。</div>
+<p>这是一段普通的段落。</p>
+<p>这是一段普通的段落。</p>
+<p>这是一段普通的段落。</p>
+```
+
+```css
+p:nth-last-child(2) {
+    background-color: yellow;
+}
+```
+
+效果：
+
+<section id="section_34">
+    <div>这是一段普通的段落。</div>
+    <p>这是一段普通的段落。</p>
+    <p>这是一段普通的段落。</p>
+    <p>这是一段普通的段落。</p>
+</section>
+
+## :nth-of-type(n) - 指定属于其父元素的第 n 个指定元素
+
+语法：
+
+```html
+<div>这是一段普通的段落。</div>
+<p>这是一段普通的段落。</p>
+<p>这是一段普通的段落。</p>
+<p>这是一段普通的段落。</p>
+```
+
+```css
+p:nth-of-type(2) {
+    background-color: yellow;
+}
+```
+
+效果：
+
+<section id="section_35">
+    <div>这是一段普通的段落。</div>
+    <p>这是一段普通的段落。</p>
+    <p>这是一段普通的段落。</p>
+    <p>这是一段普通的段落。</p>
+</section>
+
+## :nth-last-of-type(n) - 指定属于其父元素的倒数第 n 个指定元素
+
+语法：
+
+```html
+<div>这是一段普通的段落。</div>
+<p>这是一段普通的段落。</p>
+<p>这是一段普通的段落。</p>
+<p>这是一段普通的段落。</p>
+```
+
+```css
+p:nth-last-of-type(2) {
+    background-color: yellow;
+}
+```
+
+效果：
+
+<section id="section_36">
+    <div>这是一段普通的段落。</div>
+    <p>这是一段普通的段落。</p>
+    <p>这是一段普通的段落。</p>
+    <p>这是一段普通的段落。</p>
+</section>
+
+## :root - 指定根元素
+
+```css
+:root {
+    background-color: yellow;
+}
+```
+
+## :empty - 指定没有子元素的元素
+
+语法：
+
+```html
+<p>这是一段普通的段落。</p>
+<p></p>
+<p>这是一段普通的段落。</p>
+```
+
+```css
+p:empty {
+    height: 1em;
+    background-color: yellow;
+}
+```
+
+效果：
+
+<section id="section_38">
+    <p>这是一段普通的段落。</p>
+    <p></p>
+    <p>这是一段普通的段落。</p>
+</section>
+
+## :target - 指定的锚点链接
+
+语法：
+
+```html
+<div>
+    <a href="#段落一">跳转至段落一</a>
+</div>
+<div>
+    <a href="#段落二">跳转至段落二</a>
+</div>
+<p id="段落一">段落一</p>
+<p id="段落二">段落二</p>
+```
+
+```css
+:target {
+    background-color: yellow;
+}
+```
+
+效果：
+
+<section id="section_39">
+    <div>
+        <a href="#段落一">跳转至段落一</a>
+    </div>
+    <div>
+        <a href="#段落二">跳转至段落二</a>
+    </div>
+    <p id="段落一">段落一</p>
+    <p id="段落二">段落二</p>
+</section>
+
+## :enabled - 指定启用的输入元素
+
+语法：
+
+```html
+<input type="text" name="foo">
+<input type="text" name="bar">
+```
+
+```css
+input:enabled {
+    background-color: yellow;
+}
+```
+
+效果：
+
+<section id="section_40">
+    <input type="text" name="foo">
+    <input type="text" name="bar">
+</section>
+
+## :disabled - 指定禁用的输入元素
+
+语法：
+
+```html
+<input type="text" name="foo">
+<input type="text" name="bar" disabled="disabled">
+```
+
+```css
+input:disabled {
+    background-color: yellow;
+}
+```
+
+效果：
+
+<section id="section_41">
+    <input type="text" name="foo">
+    <input type="text" name="bar" disabled="disabled">
+</section>
+
+## :not(selector) - 指定非 selector 元素的元素
+
+语法：
+
+```html
+<div>这是一段普通的段落。</div>
+<p>这是一段普通的段落。</p>
+```
+
+```css
+:not(p) {
+    background-color: yellow;
+}
+```
+
+效果：
+
+<section id="section_42">
+    <div>这是一段普通的段落。</div>
+    <p>这是一段普通的段落。</p>
+</section>
+
+## ::selection - 被用户选中的区域
+
+语法：
+
+```css
+::selection {
+    background-color: yellow;
+}
+```
+

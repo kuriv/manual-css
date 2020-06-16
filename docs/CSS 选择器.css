@@ -95,3 +95,80 @@
 #section_24 p:after {
     content: "#";
 }
+
+#section_25 p:first-letter {
+    color: red;
+}
+
+#section_26 p:first-line {
+    color: red;
+}
+
+#section_27 p:first-child {
+    background-color: yellow;
+}
+
+#section_28 p:last-child {
+    background-color: yellow;
+}
+
+#section_29 p:first-of-type {
+    background-color: yellow;
+}
+
+#section_30 p:last-of-type {
+    background-color: yellow;
+}
+
+#section_31 p:only-child {
+    background-color: yellow;
+}
+
+#section_32 p:only-of-type {
+    background-color: yellow;
+}
+
+#section_33 p:nth-child(2) {
+    background-color: yellow;
+}
+
+#section_34 p:nth-last-child(2) {
+    background-color: yellow;
+}
+
+#section_35 p:nth-of-type(2) {
+    background-color: yellow;
+}
+
+#section_36 p:nth-last-of-type(2) {
+    background-color: yellow;
+}
+
+:root {
+    background-color: yellow;
+}
+
+#section_38 p:empty {
+    height: 1em;
+    background-color: yellow;
+}
+
+:target {
+    background-color: yellow;
+}
+
+#section_40 input:enabled {
+    background-color: yellow;
+}
+
+#section_41 input:disabled {
+    background-color: yellow;
+}
+
+#section_42 :not(p) {
+    background-color: yellow;
+}
+
+::selection {
+    background-color: yellow;
+}
