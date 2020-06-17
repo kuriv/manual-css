@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>尺寸 · CSS</title>
+        <title>列表 · CSS</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -74,8 +74,6 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    
-    <link rel="prev" href="盒.html" />
     
 
     
@@ -201,7 +199,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.1.1.5" data-path="尺寸.html">
+        <li class="chapter " data-level="1.1.1.5" data-path="尺寸.html">
             
                 <a href="尺寸.html">
             
@@ -279,7 +277,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.1.11" data-path="列表.html">
+        <li class="chapter active" data-level="1.1.1.11" data-path="列表.html">
             
                 <a href="列表.html">
             
@@ -475,7 +473,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >尺寸</a>
+        <a href="../.." >列表</a>
     </h1>
 </div>
 
@@ -490,93 +488,88 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5C3A;&#x5BF8;">&#x5C3A;&#x5BF8;</h1>
+                                <h1 id="&#x5217;&#x8868;">&#x5217;&#x8868;</h1>
 <ul>
-<li><a href="#height">height</a></li>
-<li><a href="#max-height">max-height</a></li>
-<li><a href="#max-width">max-width</a></li>
-<li><a href="#min-height">min-height</a></li>
-<li><a href="#min-width">min-width</a></li>
-<li><a href="#width">width</a></li>
+<li><a href="#list-style">list-style</a></li>
+<li><a href="#list-style-image">list-style-image</a></li>
+<li><a href="#list-style-position">list-style-position</a></li>
+<li><a href="#list-style-type">list-style-type</a></li>
 </ul>
-<h2 id="height">height</h2>
+<h2 id="list-style">list-style</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Coffee<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Tea<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Coca Cola<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<pre class="language-"><code class="lang-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<pre class="language-"><code class="lang-css"><span class="token selector">ul</span> <span class="token punctuation">{</span>
+    <span class="token property">list-style</span><span class="token punctuation">:</span> square inside <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>&apos;arrow.gif&apos;<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<section>
-    <p style="height: 100px;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
-</section>
+<ul style="list-style: square inside url(&apos;arrow.gif&apos;);">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+</ul>
 
-
-<h2 id="max-height">max-height</h2>
+<h2 id="list-style-image">list-style-image</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Coffee<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Tea<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Coca Cola<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<pre class="language-"><code class="lang-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">max-height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<pre class="language-"><code class="lang-css"><span class="token selector">ul</span> <span class="token punctuation">{</span>
+    <span class="token property">list-style-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>&apos;arrow.gif&apos;<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<section>
-    <p style="max-height: 100px;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
-</section>
+<ul style="list-style-image: url(&apos;arrow.gif&apos;);">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+</ul>
 
-<h2 id="max-width">max-width</h2>
+<h2 id="list-style-position">list-style-position</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Coffee<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Tea<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Coca Cola<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<pre class="language-"><code class="lang-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">max-width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<pre class="language-"><code class="lang-css"><span class="token selector">ul</span> <span class="token punctuation">{</span>
+    <span class="token property">list-style-position</span><span class="token punctuation">:</span> inside<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<section>
-    <p style="max-width: 100px;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
-</section>
+<ul style="list-style-position: inside;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+</ul>
 
-<h2 id="min-height">min-height</h2>
+<h2 id="list-style-type">list-style-type</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Coffee<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Tea<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Coca Cola<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<pre class="language-"><code class="lang-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">min-height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<pre class="language-"><code class="lang-css"><span class="token selector">ul</span> <span class="token punctuation">{</span>
+    <span class="token property">list-style-type</span><span class="token punctuation">:</span> square<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<section>
-    <p style="min-height: 100px;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
-</section>
-
-<h2 id="min-width">min-width</h2>
-<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-</code></pre>
-<pre class="language-"><code class="lang-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">min-width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<p>&#x6548;&#x679C;&#xFF1A;</p>
-<section>
-    <p style="min-width: 100px;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
-</section>
-
-<h2 id="width">width</h2>
-<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-</code></pre>
-<pre class="language-"><code class="lang-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<p>&#x6548;&#x679C;&#xFF1A;</p>
-<section>
-    <p style="width: 100px;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
-</section>
+<ul style="list-style-type: square;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+</ul>
                                 
                                 </section>
                             
@@ -603,10 +596,6 @@
 
             
                 
-                <a href="盒.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 盒">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
                 
             
         
@@ -615,7 +604,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"尺寸","level":"1.1.1.5","depth":3,"next":{"title":"[可伸缩框]","level":"1.1.1.6","depth":3,"ref":"","articles":[]},"previous":{"title":"盒","level":"1.1.1.4","depth":3,"path":"docs/CSS 属性/盒.md","ref":"docs/CSS 属性/盒.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.png","appleTouchMore":{"120x120":"favicon-120x120.png","180x180":"favicon-180x180.png"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"CSS","language":"zh-hans","gitbook":">=3.0.0","description":"CSS 手册","direction":"ltr"},"file":{"path":"docs/CSS 属性/尺寸.md","mtime":"2020-06-17T11:35:14.263Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-17T11:57:14.663Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"列表","level":"1.1.1.11","depth":3,"next":{"title":"[外边距]","level":"1.1.1.12","depth":3,"ref":"","articles":[]},"previous":{"title":"[超链接]","level":"1.1.1.10","depth":3,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.png","appleTouchMore":{"120x120":"favicon-120x120.png","180x180":"favicon-180x180.png"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"CSS","language":"zh-hans","gitbook":">=3.0.0","description":"CSS 手册","direction":"ltr"},"file":{"path":"docs/CSS 属性/列表.md","mtime":"2020-06-17T11:57:10.277Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-17T11:57:14.663Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
