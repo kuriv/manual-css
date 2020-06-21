@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>用户界面 · CSS</title>
+        <title>颜色 · CSS</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -74,8 +74,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../CSS 选择器.html" />
+    <link rel="next" href="尺寸.html" />
     
+    
+    <link rel="prev" href="盒.html" />
     
 
     
@@ -201,7 +203,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.1.5" data-path="颜色.html">
+        <li class="chapter active" data-level="1.1.1.5" data-path="颜色.html">
             
                 <a href="颜色.html">
             
@@ -383,7 +385,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.1.1.19" data-path="用户界面.html">
+        <li class="chapter " data-level="1.1.1.19" data-path="用户界面.html">
             
                 <a href="用户界面.html">
             
@@ -449,7 +451,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >用户界面</a>
+        <a href="../.." >颜色</a>
     </h1>
 </div>
 
@@ -464,59 +466,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x7528;&#x6237;&#x754C;&#x9762;">&#x7528;&#x6237;&#x754C;&#x9762;</h1>
+                                <h1 id="&#x989C;&#x8272;">&#x989C;&#x8272;</h1>
 <ul>
-<li><a href="#box-sizing">box-sizing</a></li>
-<li><a href="#outline-offset">outline-offset</a></li>
-<li><a href="#resize">resize</a></li>
+<li><a href="#opacity">opacity</a></li>
 </ul>
-<h2 id="box-sizing">box-sizing</h2>
-<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>&#x6BB5;&#x843D;&#x4E00;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x6BB5;&#x843D;&#x4E8C;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-</code></pre>
-<pre class="language-"><code class="lang-css"><span class="token selector">div, p</span> <span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token selector">div</span> <span class="token punctuation">{</span>
-    <span class="token property">border</span><span class="token punctuation">:</span> 5px solid black<span class="token punctuation">;</span>
-    <span class="token property">box-sizing</span><span class="token punctuation">:</span> content-box<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">border</span><span class="token punctuation">:</span> 5px solid red<span class="token punctuation">;</span>
-    <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<p>&#x6548;&#x679C;&#xFF1A;</p>
-<p></p><div style="border: 5px solid black; width: 100%; box-sizing: content-box;">&#x6BB5;&#x843D;&#x4E00;</div><p></p>
-<p style="border: 5px solid red; width: 100%; box-sizing: border-box;">&#x6BB5;&#x843D;&#x4E8C;</p>
-
-<h2 id="outline-offset">outline-offset</h2>
+<h2 id="opacity">opacity</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
 <pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <pre class="language-"><code class="lang-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">outline</span><span class="token punctuation">:</span> 5px solid red<span class="token punctuation">;</span>
-    <span class="token property">border</span><span class="token punctuation">:</span> 5px solid black<span class="token punctuation">;</span>
-    <span class="token property">outline-offset</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> .5<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p style="outline: 5px solid red; border: 5px solid black; outline-offset: 10px;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
-
-<h2 id="resize">resize</h2>
-<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-</code></pre>
-<pre class="language-"><code class="lang-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">overflow</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
-    <span class="token property">resize</span><span class="token punctuation">:</span> both<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<p>&#x6548;&#x679C;&#xFF1A;</p>
-<p style="overflow: auto; resize: both;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+<p style="background-color: yellow; opacity: .5;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
                                 
                                 </section>
                             
@@ -543,8 +507,12 @@
 
             
                 
+                <a href="盒.html" class="navigation navigation-prev " aria-label="Previous page: 盒">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="../CSS 选择器.html" class="navigation navigation-next navigation-unique" aria-label="Next page: CSS 选择器">
+                
+                <a href="尺寸.html" class="navigation navigation-next " aria-label="Next page: 尺寸">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -555,7 +523,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"用户界面","level":"1.1.1.19","depth":3,"next":{"title":"CSS 选择器","level":"1.1.2","depth":2,"path":"docs/CSS 选择器.md","ref":"docs/CSS 选择器.md","articles":[]},"previous":{"title":"[过渡]","level":"1.1.1.18","depth":3,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.png","appleTouchMore":{"120x120":"favicon-120x120.png","180x180":"favicon-180x180.png"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"CSS","language":"zh-hans","gitbook":">=3.0.0","description":"CSS 手册","direction":"ltr"},"file":{"path":"docs/CSS 属性/用户界面.md","mtime":"2020-06-19T12:11:10.586Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-21T06:27:40.532Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"颜色","level":"1.1.1.5","depth":3,"next":{"title":"尺寸","level":"1.1.1.6","depth":3,"path":"docs/CSS 属性/尺寸.md","ref":"docs/CSS 属性/尺寸.md","articles":[]},"previous":{"title":"盒","level":"1.1.1.4","depth":3,"path":"docs/CSS 属性/盒.md","ref":"docs/CSS 属性/盒.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.png","appleTouchMore":{"120x120":"favicon-120x120.png","180x180":"favicon-180x180.png"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"CSS","language":"zh-hans","gitbook":">=3.0.0","description":"CSS 手册","direction":"ltr"},"file":{"path":"docs/CSS 属性/颜色.md","mtime":"2020-06-21T06:09:51.476Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-21T06:27:40.532Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

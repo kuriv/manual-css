@@ -3,3 +3,25 @@
 #section_1 a:after {
     content: attr(title);
 }
+
+#section_2 div {
+    counter-reset: section;
+}
+
+#section_2 p:after {
+    counter-increment: section;
+    content: counter(section);
+}
+
+#section_3 div {
+    counter-reset: section;
+}
+
+#section_3 p:after {
+    counter-increment: section;
+    content: counter(section);
+}
+
+#section_4 q {
+    quotes: '【' '】' '[' ']';
+}

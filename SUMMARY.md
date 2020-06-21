@@ -6,6 +6,7 @@
         * [背景](docs/CSS 属性/背景.md)
         * [边框和轮廓](docs/CSS 属性/边框和轮廓.md)
         * [盒](docs/CSS 属性/盒.md)
+        * [颜色](docs/CSS 属性/颜色.md)
         * [尺寸](docs/CSS 属性/尺寸.md)
         * [可伸缩框]
         * [字体](docs/CSS 属性/字体.md)
