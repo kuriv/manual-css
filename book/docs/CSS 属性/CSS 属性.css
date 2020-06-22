@@ -25,3 +25,58 @@
 #section_4 q {
     quotes: '【' '】' '[' ']';
 }
+
+#section_5 p {
+    width: 200px;
+    background-color: yellow;
+    transition: width .5s ease 2s;
+}
+
+#section_5 p:hover {
+    width: 400px;
+}
+
+#section_6 p {
+    width: 200px;
+    background-color: yellow;
+    transition-property: width;
+}
+
+#section_6 p:hover {
+    width: 400px;
+}
+
+#section_7 p {
+    width: 200px;
+    background-color: yellow;
+    transition-property: width;
+    transition-duration: .5s;
+}
+
+#section_7 p:hover {
+    width: 400px;
+}
+
+#section_8 p {
+    width: 200px;
+    background-color: yellow;
+    transition-property: width;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+#section_8 p:hover {
+    width: 400px;
+}
+
+#section_9 p {
+    width: 200px;
+    background-color: yellow;
+    transition-property: width;
+    transition-duration: .5s;
+    transition-delay: 2s;
+}
+
+#section_9 p:hover {
+    width: 400px;
+}

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>外边距 · CSS</title>
+        <title>2D & 3D 转换 · CSS</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -74,8 +74,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="过渡.html" />
     
-    <link rel="prev" href="列表.html" />
+    
+    <link rel="prev" href="文本.html" />
     
 
     
@@ -279,7 +281,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.1.1.11" data-path="外边距.html">
+        <li class="chapter " data-level="1.1.1.11" data-path="外边距.html">
             
                 <a href="外边距.html">
             
@@ -357,7 +359,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.1.17" data-path="2D & 3D 转换.html">
+        <li class="chapter active" data-level="1.1.1.17" data-path="2D & 3D 转换.html">
             
                 <a href="2D & 3D 转换.html">
             
@@ -449,7 +451,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >外边距</a>
+        <a href="../.." >2D & 3D 转换</a>
     </h1>
 </div>
 
@@ -464,68 +466,91 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5916;&#x8FB9;&#x8DDD;">&#x5916;&#x8FB9;&#x8DDD;</h1>
+                                <h1 id="2d--3d-&#x8F6C;&#x6362;">2D &amp; 3D &#x8F6C;&#x6362;</h1>
 <ul>
-<li><a href="#margin">margin</a></li>
-<li><a href="#margin-bottom">margin-bottom</a></li>
-<li><a href="#margin-left">margin-left</a></li>
-<li><a href="#margin-right">margin-right</a></li>
-<li><a href="#margin-top">margin-top</a></li>
+<li><a href="#transform">transform</a></li>
+<li><a href="#transform-origin">transform-origin</a></li>
+<li><a href="#transform-style">transform-style</a></li>
+<li><a href="#backface-visibility">backface-visibility</a></li>
 </ul>
-<h2 id="margin">margin</h2>
+<h2 id="transform">transform</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
 <pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <pre class="language-"><code class="lang-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">margin</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>5deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p style="margin: 1em;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+<p style="transform: rotate(5deg);">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
 
-<h2 id="margin-bottom">margin-bottom</h2>
+<h2 id="transform-origin">transform-origin</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
 <pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <pre class="language-"><code class="lang-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>5deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">transform-origin</span><span class="token punctuation">:</span> -10% -10%<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p style="margin-bottom: 1em;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+<p style="transform: rotate(5deg); transform-origin: -10% -10%;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
 
-<h2 id="margin-left">margin-left</h2>
+<h2 id="transform-style">transform-style</h2>
 <p>&#x8BED;&#x6CD5;&#xFF1A;</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x6BB5;&#x843D;&#x4E00;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<pre class="language-"><code class="lang-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">margin-left</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
+<pre class="language-"><code class="lang-css"><span class="token selector">section</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-</code></pre>
-<p>&#x6548;&#x679C;&#xFF1A;</p>
-<p style="margin-left: 1em;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
 
-<h2 id="margin-right">margin-right</h2>
-<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-</code></pre>
-<pre class="language-"><code class="lang-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">margin-right</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
+<span class="token selector">div, p</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-</code></pre>
-<p>&#x6548;&#x679C;&#xFF1A;</p>
-<p style="margin-right: 1em;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
 
-<h2 id="margin-top">margin-top</h2>
-<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-</code></pre>
-<pre class="language-"><code class="lang-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
-    <span class="token property">margin-top</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
+<span class="token selector">div</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateY</span><span class="token punctuation">(</span>60deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">transform-style</span><span class="token punctuation">:</span> preserve-3d<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">p</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateY</span><span class="token punctuation">(</span>-60deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x6548;&#x679C;&#xFF1A;</p>
-<p style="margin-top: 1em;">&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x666E;&#x901A;&#x7684;&#x6BB5;&#x843D;&#x3002;</p>
+<section style="position: relative; height: 100px;">
+    <div style="position: absolute; width: 100px; height: 100px; background-color: red; transform: rotateY(60deg); transform-style: preserve-3d;">
+        <p style="position: absolute; width: 100px; height: 100px; background-color: yellow; transform: rotateY(-60deg);">&#x6BB5;&#x843D;&#x4E00;</p>
+    </div>
+</section>
+
+<h2 id="backface-visibility">backface-visibility</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>&#x6BB5;&#x843D;&#x4E00;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x6BB5;&#x843D;&#x4E8C;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-css"><span class="token selector">div</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateX</span><span class="token punctuation">(</span>180deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">backface-visibility</span><span class="token punctuation">:</span> visible<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">p</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateX</span><span class="token punctuation">(</span>180deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">backface-visibility</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<p></p><div style="transform: rotateX(180deg); backface-visibility: visible;">&#x6BB5;&#x843D;&#x4E00;</div><p></p>
+<p style="transform: rotateX(180deg); backface-visibility: hidden;">&#x6BB5;&#x843D;&#x4E8C;</p>
                                 
                                 </section>
                             
@@ -552,10 +577,14 @@
 
             
                 
-                <a href="列表.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 列表">
+                <a href="文本.html" class="navigation navigation-prev " aria-label="Previous page: 文本">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="过渡.html" class="navigation navigation-next " aria-label="Next page: 过渡">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -564,7 +593,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"外边距","level":"1.1.1.11","depth":3,"next":{"title":"[多列]","level":"1.1.1.12","depth":3,"ref":"","articles":[]},"previous":{"title":"列表","level":"1.1.1.10","depth":3,"path":"docs/CSS 属性/列表.md","ref":"docs/CSS 属性/列表.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.png","appleTouchMore":{"120x120":"favicon-120x120.png","180x180":"favicon-180x180.png"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"CSS","language":"zh-hans","gitbook":">=3.0.0","description":"CSS 手册","direction":"ltr"},"file":{"path":"docs/CSS 属性/外边距.md","mtime":"2020-06-17T12:04:45.362Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-22T08:08:03.547Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2D & 3D 转换","level":"1.1.1.17","depth":3,"next":{"title":"过渡","level":"1.1.1.18","depth":3,"path":"docs/CSS 属性/过渡.md","ref":"docs/CSS 属性/过渡.md","articles":[]},"previous":{"title":"文本","level":"1.1.1.16","depth":3,"path":"docs/CSS 属性/文本.md","ref":"docs/CSS 属性/文本.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.png","appleTouchMore":{"120x120":"favicon-120x120.png","180x180":"favicon-180x180.png"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"CSS","language":"zh-hans","gitbook":">=3.0.0","description":"CSS 手册","direction":"ltr"},"file":{"path":"docs/CSS 属性/2D & 3D 转换.md","mtime":"2020-06-22T08:08:01.251Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-22T08:08:03.547Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

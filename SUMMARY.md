@@ -18,8 +18,8 @@
         * [定位](docs/CSS 属性/定位.md)
         * [表格](docs/CSS 属性/表格.md)
         * [文本](docs/CSS 属性/文本.md)
-        * [2D / 3D 转换]
-        * [过渡]
+        * [2D & 3D 转换](docs/CSS 属性/2D & 3D 转换.md)
+        * [过渡](docs/CSS 属性/过渡.md)
         * [用户界面](docs/CSS 属性/用户界面.md)
     * [CSS 选择器](docs/CSS 选择器.md)
 
