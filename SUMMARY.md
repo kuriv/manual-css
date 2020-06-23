@@ -2,18 +2,17 @@
 
 * [CSS](README.md)
     * [CSS 属性](docs/CSS 属性.md)
-        * [动画]
+        * [动画](docs/CSS 属性/动画.md)
         * [背景](docs/CSS 属性/背景.md)
         * [边框和轮廓](docs/CSS 属性/边框和轮廓.md)
         * [盒](docs/CSS 属性/盒.md)
         * [颜色](docs/CSS 属性/颜色.md)
         * [尺寸](docs/CSS 属性/尺寸.md)
-        * [可伸缩框]
         * [字体](docs/CSS 属性/字体.md)
         * [内容生成](docs/CSS 属性/内容生成.md)
         * [列表](docs/CSS 属性/列表.md)
         * [外边距](docs/CSS 属性/外边距.md)
-        * [多列]
+        * [多列](docs/CSS 属性/多列.md)
         * [内边距](docs/CSS 属性/内边距.md)
         * [定位](docs/CSS 属性/定位.md)
         * [表格](docs/CSS 属性/表格.md)

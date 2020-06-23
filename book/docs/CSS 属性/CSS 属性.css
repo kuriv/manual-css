@@ -1,63 +1,168 @@
 @charset "utf-8";
 
-#section_1 a:after {
-    content: attr(title);
+@keyframes move {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 200px;
+    }
+}
+
+#section_1 div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation: move .5s linear;
 }
 
 #section_2 div {
-    counter-reset: section;
-}
-
-#section_2 p:after {
-    counter-increment: section;
-    content: counter(section);
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation: move .5s linear;
 }
 
 #section_3 div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation-name: move;
+    animation-duration: .5s;
+}
+
+#section_4 div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation-name: move;
+    animation-duration: .5s;
+}
+
+#section_5 div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation-name: move;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+}
+
+#section_6 div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation-name: move;
+    animation-duration: .5s;
+    animation-delay: 2s;
+}
+
+#section_7 div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation-name: move;
+    animation-duration: .5s;
+    animation-iteration-count: 5;
+}
+
+#section_8 div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation-name: move;
+    animation-duration: .5s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+}
+
+#section_9 div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation-name: move;
+    animation-duration: .5s;
+    animation-play-state: paused;
+}
+
+#section_10 div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation-name: move;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+#section_11 a:after {
+    content: attr(title);
+}
+
+#section_12 div {
     counter-reset: section;
 }
 
-#section_3 p:after {
+#section_12 p:after {
     counter-increment: section;
     content: counter(section);
 }
 
-#section_4 q {
+#section_13 div {
+    counter-reset: section;
+}
+
+#section_13 p:after {
+    counter-increment: section;
+    content: counter(section);
+}
+
+#section_14 q {
     quotes: '【' '】' '[' ']';
 }
 
-#section_5 p {
+#section_15 p {
     width: 200px;
     background-color: yellow;
     transition: width .5s ease 2s;
 }
 
-#section_5 p:hover {
+#section_15 p:hover {
     width: 400px;
 }
 
-#section_6 p {
+#section_16 p {
     width: 200px;
     background-color: yellow;
     transition-property: width;
 }
 
-#section_6 p:hover {
+#section_16 p:hover {
     width: 400px;
 }
 
-#section_7 p {
+#section_17 p {
     width: 200px;
     background-color: yellow;
     transition-property: width;
     transition-duration: .5s;
 }
 
-#section_7 p:hover {
+#section_17 p:hover {
     width: 400px;
 }
 
-#section_8 p {
+#section_18 p {
     width: 200px;
     background-color: yellow;
     transition-property: width;
@@ -65,11 +170,11 @@
     transition-timing-function: linear;
 }
 
-#section_8 p:hover {
+#section_18 p:hover {
     width: 400px;
 }
 
-#section_9 p {
+#section_19 p {
     width: 200px;
     background-color: yellow;
     transition-property: width;
@@ -77,6 +182,6 @@
     transition-delay: 2s;
 }
 
-#section_9 p:hover {
+#section_19 p:hover {
     width: 400px;
 }
