@@ -1,6 +1,7 @@
 # Summary
 
 * [CSS](README.md)
+    * [CSS 选择器](docs/CSS 选择器.md)
     * [CSS 属性](docs/CSS 属性.md)
         * [动画](docs/CSS 属性/动画.md)
         * [背景](docs/CSS 属性/背景.md)
@@ -20,5 +21,4 @@
         * [2D & 3D 转换](docs/CSS 属性/2D & 3D 转换.md)
         * [过渡](docs/CSS 属性/过渡.md)
         * [用户界面](docs/CSS 属性/用户界面.md)
-    * [CSS 选择器](docs/CSS 选择器.md)
 
