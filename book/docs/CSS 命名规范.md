@@ -32,7 +32,7 @@
 .block__element--modifier {}
 ```
 
-其中 .block 代表了更高级别的抽象或组件， .block__element 代表 .block 的后代，用于形成一个完整的 .block 的整体， .block--modifier 代表 .block 的不同状态或不同版本。使用两个连字符和下划线时为了让自己定义的块可以用单个连字符来界定。
+其中 .block 代表了更高级别的抽象或组件， .block__element 代表 .block 的后代，用于形成一个完整的 .block 的整体， .block--modifier 代表 .block 的不同状态或不同版本。使用两个连字符和下划线是为了让自己定义的块可以用单个连字符来界定。
 
 ## 示例
 
@@ -40,10 +40,10 @@
 
 ```html
 <div class="banner__btn">
-    <button class=".button .banner__btn--red"></button>
-    <button class=".button .banner__btn--green"></button>
-    <button class=".button .banner__btn--blue"></button>
-    <button class=".button .banner__btn--yellow"></button>
+    <button class="button banner__btn--red"></button>
+    <button class="button banner__btn--green"></button>
+    <button class="button banner__btn--blue"></button>
+    <button class="button banner__btn--yellow"></button>
 </div>
 ```
 
