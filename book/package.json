@@ -1,6 +1,6 @@
 {
   "name": "manual-css",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "CSS 手册",
   "main": "index.js",
   "scripts": {
